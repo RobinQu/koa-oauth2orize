@@ -6,7 +6,7 @@ var passport = require("koa-passport")
 
 exports.info = compose([
   passport.authenticate("bearer", { session: false }),
-  function() {
+  function*() {
     // this.authInfo is set using the `info` argument supplied by
     // `BearerStrategy`.  It is typically used to indicate scope of the token,
     // and used in access control checks.  For illustrative purposes, this

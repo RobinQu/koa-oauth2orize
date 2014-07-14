@@ -16,6 +16,7 @@ var oauth2orize = require("koa-oauth2orize")
 // create OAuth 2.0 server
 var server = oauth2orize.createServer();
 
+
 // Register serialialization and deserialization functions.
 //
 // When a client redirects a user to user authorization endpoint, an

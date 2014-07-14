@@ -18,6 +18,7 @@ var koa = require("koa")
 var app = koa();
 app.use(require("koa-bodyparser")());
 app.keys = ["i'm a secret"];
+app.use(require("koa-session")());
 render(app, {
   root: path.join(__dirname, "views"),
   layout: "layout",
