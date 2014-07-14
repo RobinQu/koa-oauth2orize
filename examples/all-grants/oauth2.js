@@ -186,7 +186,7 @@ exports.authorization = compose([
       return done(null, client, redirectURI);
     });
   }),
-  function(){
+  function*(){
     yield this.render("dialog", { transactionID: this.oauth2.transactionID, user: this.req.user, client: this.oauth2.client });
   }
 ]);

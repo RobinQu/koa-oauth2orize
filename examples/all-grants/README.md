@@ -1,31 +1,32 @@
-oauth2orize: oauth2 provider example
-===
+# oauth2 provider example using `koa-oauth2orize`
+
+**Example code is copied and modifed version of [all-grant example](https://github.com/jaredhanson/oauth2orize/tree/master/examples/all-grants)**
+
 
 This example shows a provider which grants tokens in exchange for codes for
 
   * The client application
   * A user of the client application
 
-Install
-===
+## Install
+
+Requires node **0.11.x**
 
 ```bash
-git clone https://github.com/jaredhanson/oauth2orize.git
+git clone https://github.com/RobinQu/koa-oauth2orize.git
 pushd oauth2orize/examples/all-grants
 npm install
 ```
 
-Usage
-===
+## Usage
 
 ```bash
-node app.js
+node --harmony app.js
 ```
 
 Visit <http://localhost:3000/login> to see the server running locally.
 
-Provider / Consumer Walkthrough
-===
+## Provider / Consumer Walkthrough
 
 Interacting the this provider directly doesn't showcase it's oauth2 functionality.
 
@@ -39,8 +40,7 @@ In order to demo what this is actually accomplishing you'll need to run a consum
 
 See <https://github.com/coolaj86/example-oauth2orize-consumer>
 
-API
-===
+## API
 
 Below is a mapping of the API in the context of a passport-strategy
 

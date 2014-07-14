@@ -23,7 +23,8 @@
   "dependencies": {
     "oauth2orize": "RobinQu/oauth2orize",
     "lodash": "^2.4.1",
-    "node-proxy-defaults": "^1.0.0"
+    "node-proxy-defaults": "^1.0.0",
+    "debug": "^1.0.3"
   },
   "homepage": "https://github.com/RobinQu/koa-oauth2orize"
 }
