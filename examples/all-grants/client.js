@@ -1,7 +1,7 @@
 /**
  * Module dependencies.
  */
-var passport = require("passport"),
+var passport = require("koa-passport"),
     compose = require("koa-compose");
 
 exports.info = compose([
