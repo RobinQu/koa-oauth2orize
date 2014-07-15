@@ -1,10 +1,10 @@
 {
   "name": "koa-oauth2orize",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "oauth2orize for koa; OAuth2 Provoder for koa",
   "main": "./lib",
   "scripts": {
-    "test": "DEBUG=* mocha --harmony"
+    "test": "DEBUG=* ./node_modules/mocha/bin/mocha --harmony --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,9 @@
     "node-proxy-defaults": "^1.0.0",
     "debug": "^1.0.3"
   },
-  "homepage": "https://github.com/RobinQu/koa-oauth2orize"
+  "homepage": "https://github.com/RobinQu/koa-oauth2orize",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1"
+  }
 }
