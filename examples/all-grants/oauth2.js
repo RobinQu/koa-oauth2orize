@@ -213,7 +213,7 @@ exports.decision = compose([
 // authenticate when making requests to this endpoint.
 
 exports.token = compose([
+  server.errorHandler(),
   passport.authenticate(["basic", "oauth2-client-password"], { session: false }),
-  server.token(),
-  server.errorHandler()
+  server.token()
 ]);
